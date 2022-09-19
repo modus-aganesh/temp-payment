@@ -26,6 +26,7 @@
 
 <script>
 	const lease_id = new URLSearchParams(window.location.search).get('lease_id');
+	if(lease_id)
 	document.body.querySelector('h1').innerHTML = `Waiting for payment (lease id: ${lease_id}) to complete. This page will disappear once payment is made.`
 </script>
 
